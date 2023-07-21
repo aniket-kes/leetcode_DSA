@@ -5,14 +5,14 @@ private:
         int ans = -1;
         int mid = s + (e-s)/2;
         while(s<=e){
-            if(target == nums[mid]){
+            if(target == nums[mid]) {
                 ans = mid;
                 e = mid - 1;
             }
-            else if(target > nums[mid]){
+            else if(target > nums[mid]) {
                 s = mid + 1;
             }
-            else{
+            else {
                 e = mid - 1;
             }
             mid = s + (e-s)/2;
@@ -24,14 +24,14 @@ private:
         int ans = -1;
         int mid = s + (e-s)/2;
         while(s<=e){
-            if(target == nums[mid]){
+            if(target == nums[mid]) {
                 ans = mid;
                 s = mid + 1;
             }
-            else if(target > nums[mid]){
+            else if(target > nums[mid]) {
                 s = mid + 1;
             }
-            else{
+            else {
                 e = mid - 1;
             }
             mid = s + (e-s)/2;
